@@ -184,7 +184,7 @@ class ScatteringFactor(Orbital):
                 result, error = quad(
                     integrand,
                     a=0,        # Lower limit of integration
-                    b=100,      # Upper limit of integration
+                    b=r.max(),      # Upper limit of integration
                     args=(k,),  # Pass g as an argument to the integrand function
                     epsabs=1e-10, # Absolute error tolerance
                     epsrel=1e-10, # Relative error tolerance
